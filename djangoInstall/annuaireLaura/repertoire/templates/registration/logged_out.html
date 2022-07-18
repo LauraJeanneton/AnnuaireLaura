@@ -1,0 +1,24 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Annuaire</title>
+      {% load static %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/registration.css' %}">
+    </head>
+    <body>
+      <h1> <center>Déconnexion</center> </h1>
+
+      <p>Déconnexion réussie!</p>
+        <a href="{% url 'login'%}">Se reconnecter</a>
+    </body>
+    <footer>
+      <br><br>
+      Master 2 IDL : Ingénierie du Développement logiciel  &nbsp;&nbsp;&nbsp;
+      Année 2021/2022<br>
+      UE de Veille Technologique &nbsp;&nbsp;&nbsp;
+      Django : la dernière tendance des framework backend en Python
+          <p>© 2022 Laura Jeanneton</p>
+      </footer>
+  </html>

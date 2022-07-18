@@ -1,0 +1,15 @@
+html, body {
+ margin: 0;
+ padding: 0;
+ background-color: rgba(170, 238, 170, 0.5);
+ }
+
+footer{
+  position: fixed;
+  left: 15;
+  bottom: 0;
+}
+
+form{
+  margin: auto; width: 220px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Annuaire</title>
+    {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <h1> <center>Mon annuaire</center> </h1>
+
+<table>
+   <tr>
+       <th>Nom Prenom</th>
+       <th>Coordonnée</th>
+   </tr>
+
+{% for book in all_users %}
+    <tr>
+
+          <td>{{ book.nom }} {{book.prenom}}</td>
+          <td>{{ book.email }}</td>
+      </tr>
+   {% endfor %}
+   </table>
+<br>
+   Nombre total d'utilisateurs :  {{nb_users}}
+
+  </body>
+  <footer>
+    Expiration de la session : {{expiration_date}}
+    <br><br>
+    Master 2 IDL : Ingénierie du Développement logiciel  &nbsp;&nbsp;&nbsp;
+    Année 2021/2022<br>
+    UE de Veille Technologique &nbsp;&nbsp;&nbsp;
+    Django : la dernière tendance des framework backend en Python
+        <p>© 2022 Laura Jeanneton</p>
+    </footer>
+</html>
