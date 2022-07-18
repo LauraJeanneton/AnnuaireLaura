@@ -5,13 +5,15 @@
       <title>Annuaire</title>
       {% load static %}
 
-  <link rel="stylesheet" type="text/css" href="{% static 'css/registration.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     </head>
     <body>
+      <br>
+      <a class="user" href="{% url 'login'%}">Se reconnecter.</a>
       <h1> <center>Déconnexion</center> </h1>
 
-      <p>Logged out!</p>
-        <a href="{% url 'login'%}">Click here to login again.</a>
+      <p>Déconnexion réussie!</p>
+
     </body>
     <footer>
       Expiration de la session : {{expiration_date}}

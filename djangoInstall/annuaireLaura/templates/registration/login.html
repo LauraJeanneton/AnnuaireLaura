@@ -5,7 +5,7 @@
     <title>Annuaire</title>
     {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/registration.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
   </head>
   <body>
     <h1> <center>Connexion</center> </h1>
@@ -14,7 +14,7 @@
 {% if form.errors %}
 <p>Your username and password didn't match. Please try again.</p>
 {% endif %}
-
+<center>
 <form method="post" action="{% url 'login' %}">
 {% csrf_token %}
 <table>
@@ -28,13 +28,12 @@
 </tr>
 </table>
 
-<input type="submit" value="login">
+
+<input class="log" type="submit" value="Se connecter">
 <input type="hidden" name="next" value="{{ next }}">
 </form>
-
-<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
-
-
+</center>
+<br><br>
   </body>
   <footer>
     Expiration de la session : {{expiration_date}}

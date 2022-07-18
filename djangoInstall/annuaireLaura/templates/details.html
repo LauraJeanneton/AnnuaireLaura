@@ -6,15 +6,18 @@
     {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
   </head>
   <body>
+    <div class="details">
+      <h1><center>Contact : {{user.prenom}} {{user.nom}} </center></h1>
+      <b>Nom : </b> {{user.nom}}</br>
+      <b>Prenom : </b> {{user.prenom}}</br>
+      <b>Email : </b> {{user.email}}</br>
+    </div>
+      <div w3-include-html="/repertoire"></div>
+<script>
+w3.includeHTML();
+</script>
   </body>
-  <footer>
-    <br>
-    Master 2 IDL : Ingénierie du Développement logiciel <br>
-    Année 2021/2022<br>
-    UE de Veille Technologique<br>
-    Django : la dernière tendance des framework backend en Python<br>
-        <p>© 2022 Laura Jeanneton</p>
-    </footer>
 </html>
